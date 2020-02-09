@@ -12,9 +12,13 @@ namespace TicTacTocHandIn
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TicTacTocPage : ContentPage
     {
-        public TicTacTocPage()
+        public TicTacTocPage() ///Probably a constructor that takes options as paramter
         {
             InitializeComponent();
         }
+
+        //TODO method that builds a grid
+
+
     }
 }

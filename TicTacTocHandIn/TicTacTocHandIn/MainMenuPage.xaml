@@ -11,16 +11,19 @@
             
             <Button 
                 Text="New Game"
+                Clicked="New_Button_Clicked"
                 Style="{StaticResource ButtonStyle}"
                 VerticalOptions="CenterAndExpand"/>
 
             <Button 
                 Text="Continue"
+                Clicked="Continue_Button_Clicked"
                 Style="{StaticResource ButtonStyle}"
                 IsEnabled="False"/>
 
             <Button 
                 Text="Options"
+                Clicked="Options_Button_Clicked"
                 Style="{StaticResource ButtonStyle}"
                 IsEnabled="False"
                 VerticalOptions="CenterAndExpand"/>
