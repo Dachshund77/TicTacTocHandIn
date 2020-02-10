@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="TicTacTocHandIn.SimpleGame"
              Title="Simple Game"
-             Style="{DynamicResource NavigationPageStyle}">
+             Style="{DynamicResource ContentPageStyle}">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
@@ -41,22 +41,31 @@
                 </Grid.RowDefinitions>
 
                 <Button x:Name="Button7" 
+                        Clicked="Button7_Clicked"
                     Grid.Column="0" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button8"
+                        Clicked="Button8_Clicked"
                     Grid.Column="1" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button9"
+                        Clicked="Button9_Clicked"
                     Grid.Column="2" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button4"
+                        Clicked="Button4_Clicked"
                     Grid.Column="0" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button5"
+                        Clicked="Button5_Clicked"
                     Grid.Column="1" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button6"
+                        Clicked="Button6_Clicked"
                     Grid.Column="2" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button1"
+                        Clicked="Button1_Clicked"
                     Grid.Column="0" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button2"
+                        Clicked="Button2_Clicked"
                     Grid.Column="1" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
                 <Button x:Name="Button3"
+                        Clicked="Button3_Clicked"
                     Grid.Column="2" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
             </Grid>
         </StackLayout>

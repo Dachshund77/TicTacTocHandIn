@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="TicTacTocHandIn.MainMenuPage"
              Title="Sven's Tic Tac Toc Game!"
-             Style="{DynamicResource NavigationPageStyle}">
+             Style="{DynamicResource ContentPageStyle}">
     <ContentPage.Content>
         <StackLayout>
             
