@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TicTacTocHandIn.SimpleGame"
+             Title="Simple Game"
+             Style="{DynamicResource NavigationPageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                Orientation="Horizontal">
+
+                <Label               
+                Style="{DynamicResource MediumLabelStyle}"
+                Text="{Binding CurPlayerTurn}"                
+                HorizontalOptions="EndAndExpand"/>
+
+                <Label               
+                Style="{DynamicResource MediumLabelStyle}"
+                Text="players turn! "                
+                HorizontalOptions="StartAndExpand"/>
+
+            </StackLayout>
+            <Grid 
+                x:Name="GameGrid"
+                Style="{DynamicResource GridStyle}"
+                VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="Button7" 
+                    Grid.Column="0" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button8"
+                    Grid.Column="1" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button9"
+                    Grid.Column="2" Grid.Row="0" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button4"
+                    Grid.Column="0" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button5"
+                    Grid.Column="1" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button6"
+                    Grid.Column="2" Grid.Row="1" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button1"
+                    Grid.Column="0" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button2"
+                    Grid.Column="1" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
+                <Button x:Name="Button3"
+                    Grid.Column="2" Grid.Row="2" Style="{DynamicResource GameButtonStyle}"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -25,7 +25,7 @@
     <EmbeddedResource Update="OptionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TicTacTocPage.xaml">
+    <EmbeddedResource Update="SimpleGame.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

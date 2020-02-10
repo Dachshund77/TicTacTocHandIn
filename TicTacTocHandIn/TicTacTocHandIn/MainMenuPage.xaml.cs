@@ -22,9 +22,9 @@ namespace TicTacTocHandIn
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void New_Button_Clicked(object sender, EventArgs e)
+        private void SimpleGame_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TicTacTocPage());
+            Navigation.PushAsync(new SimpleGame());
         }
 
         /// <summary>
@@ -32,7 +32,13 @@ namespace TicTacTocHandIn
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Continue_Button_Clicked(object sender, EventArgs e)
+        private void CustomGame_Button_Clicked(object sender, EventArgs e)
+        {
+            //This would require some DB implmentation. For the scope of this hand in slightly to large.
+            //Might considere doing it if i have the time and motivation, not like om not coding all day already :D
+        }
+
+        private void ComplexGame_Button_Clicked(object sender, EventArgs e)
         {
             //This would require some DB implmentation. For the scope of this hand in slightly to large.
             //Might considere doing it if i have the time and motivation, not like om not coding all day already :D

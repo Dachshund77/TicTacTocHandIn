@@ -8,7 +8,34 @@
     <Application.Resources>
         <ResourceDictionary Source="AppThemen.xaml" />
 
-        <Style TargetType="NavigationPage">
+        <Style x:Key="LargeLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{DynamicResource SecondaryTextColor}" />
+            <Setter Property="FontSize"
+                    Value="Large" />
+        </Style>
+
+        <Style x:Key="MediumLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{DynamicResource PrimaryTextColor}" />
+            <Setter Property="FontSize"
+                    Value="Medium" />
+        </Style>
+
+        <Style x:Key="SmallLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{DynamicResource TertiaryTextColor}" />
+            <Setter Property="FontSize"
+                    Value="Small" />
+        </Style>
+
+        <Style x:Key="NavigationPageStyle"
+            TargetType="NavigationPage">
+            <Setter Property="BackgroundColor"
+                    Value="{DynamicResource PageBackgroundColor}"/>
             <Setter Property="BarBackgroundColor"
                     Value="{DynamicResource NavigationBarColor}" />
             <Setter Property="BarTextColor"
@@ -25,6 +52,32 @@
                     Value="5" />
             <Setter Property="CornerRadius"
                     Value="18" />
+        </Style>
+
+        <Style x:Key="GameButtonStyle"
+               TargetType="tictactochandin:GameButton">
+            <Setter Property="BackgroundColor"
+                    Value="{DynamicResource PageBackgroundColor}" />
+            <Setter Property="TextColor"
+                    Value="{DynamicResource TransparentColor}" />
+            <Setter Property="Margin"
+                    Value="0" />
+            <Setter Property="Padding"
+                    Value="0" />
+            <Setter Property="CornerRadius"
+                    Value="0" />
+        </Style>
+
+        <Style x:Key="GridStyle"
+               TargetType="Grid">
+            <Setter Property="BackgroundColor"
+                    Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="RowSpacing"
+                    Value="10"/>
+            <Setter Property="ColumnSpacing"
+                    Value="10"/>
+            <Setter Property="Margin"
+                    Value="10"/>
         </Style>
 
     </Application.Resources>
